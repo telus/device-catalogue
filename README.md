@@ -3,15 +3,16 @@
 A customer would like to browse all the Apple devices available for purchase. Create an application with a component that reads and displays devices from the local restful API on port `8081`.
 The API has two routes `/watches` which returns a list of watches and `/iphones` which returns a list of iPhones.
 
-Create two routes locally with your perferred client-side routing library: `/watches` and `/iphones`. The `/watches` routes should **ONLY** display a grid of watch device cards (a reference card design is displayed below) and the `/iphones` route should **ONLY** display a grid of iphone device cards.
+Create two routes locally with your perferred client-side routing library: `/watches` and `/iphones`. The `/watches` routes should **ONLY** display a grid of watch device cards (a reference card design is displayed below) and the `/iphones` route should **ONLY** display a grid of iPhone device cards.
 Each route represents a page in the application, each page should have a heading indicating the type of devices listed on the page and a grid showing all the devices in that category.
 
 ## Application Requirements
 
-- [x] An index page with a list of all pages (i.e. A watch page and phone page).
-- [x] Unit tests for **at least** one component.
-- [x] [TDS](https://tds.telus.com/components/index.html) components **MUST** be used (A list of useful components can be found below).
-- [x] The applications should display a grid of device cards for each device type.
+- [ ] An index page with a list of all pages (i.e. A watch page and phone page).
+- [ ] Unit tests for **at least** one component.
+- [ ] [TDS](https://tds.telus.com/components/index.html) components **MUST** be used (A list of useful components can be found below).
+- [ ] The applications should display a grid of device cards for each device type.
+- [ ] Submit your solution as git bundle via email to your hiring manager.
 
 Apple Watch and iPhone assets are available in the public directory
 
@@ -43,7 +44,6 @@ The mock API replies with the following structure:
 
 `npm run dev` will start the local API server on port 8081 along with a client side user interface available on port 8080.
 
-
 ## Reference Device Card
 
 All device cards should look as close as possible to the following device card:
@@ -53,13 +53,13 @@ Note: all device cards should simply showcase the name of the device, the brand 
 > TELUS Easy Payment and Bring-It-Back applied. Read legal footnote Taxes due upfront.
 > Retail price: $1130
 
-![device card](https://github.com/akeemattelus/catalogue/blob/master/public/images/device-card.png)
+![device card](https://github.com/telus/device-catalogue/blob/master/public/images/device-card.png)
 
 ## Reference Device Grid
 
 The device grid should look as close as possible to the following device grid but exact spacing isn't required:
 
-![device card](https://github.com/akeemattelus/catalogue/blob/master/public/images/device-grid.png)
+![device card](https://github.com/telus/device-catalogue/blob/master/public/images/device-grid.png)
 
 ## Useful TDS components
 
