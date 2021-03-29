@@ -50,5 +50,5 @@ router.get('/iphones', function(req, res) {
 app.use('/', router);
 
 app.listen(PORT, () => {
-  console.log(`Apple API started on port ${PORT}`);
+  console.log(`API started on port ${PORT}`);
 });
