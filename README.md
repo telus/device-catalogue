@@ -9,7 +9,7 @@ Each route represents a page in the application, each page should have a heading
 ## Application Requirements
 
 - [ ] An index page with a list of all pages (i.e. A watch page and phone page).
-- [ ] Unit tests for **at least** one component.
+- [ ] Unit tests for your work where it makes sense. At Telus Digital we pride ourselves on having applications with great test coverage. Please be prepared to talk about your testing choices.
 - [ ] [TDS](https://tds.telus.com/components/index.html) components **MUST** be used (A list of useful components can be found below).
 - [ ] The applications should display a grid of device cards for each device type.
 - [ ] Submit your solution as git bundle via email to your hiring manager.
