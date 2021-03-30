@@ -40,9 +40,25 @@ The mock API replies with the following structure:
 }
 ```
 
-## Starting the Application
+## Local development
 
-`npm run dev` will start the local API server on port 8081 along with a client side user interface available on port 8080.
+Install dependencies
+
+```sh
+npm install
+```
+
+Start the local API server on port 8081 along with a client side user interface on port 8080.
+
+```sh
+npm run dev
+```
+
+Running the tests
+
+```sh
+npm run unit
+```
 
 ## Reference Device Card
 
