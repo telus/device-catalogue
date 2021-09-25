@@ -7,6 +7,7 @@ module.exports = {
   entry: './src/client.jsx',
   devServer: {
     contentBase: './dist',
+    historyApiFallback: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
