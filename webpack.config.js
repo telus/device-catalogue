@@ -31,7 +31,6 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/, 
         type: "asset"
-        //loading image solution-- https://survivejs.com/webpack/loading/images/
       },
       {
         test: /\.css$/,
