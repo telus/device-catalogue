@@ -1,12 +1,12 @@
 import React from 'react';
 import Heading from '@tds/core-heading';
 import DisplayHeading from '@tds/core-display-heading';
-import Image from '@tds/core-image';
-import Card from '@tds/core-card';
+import Link from '@tds/core-link';
 import FlexGrid from '@tds/core-flex-grid';
-import NavBar from '../NavBar';
+import NavBar from '../Reusable/NavBar';
 import iphoneImg from '../../../../public/images/iphone.jpg';
 import watchImg from '../../../../public/images/watch.jpg';
+import DeviceCard from '../Reusable/DeviceCard';
 const Home = () => {
   // {
   //   image: iPhoneImg,
@@ -22,28 +22,25 @@ const Home = () => {
   // }
 return (
   <React.Fragment>
-    <div>
+    <div className="display-heading">
       <DisplayHeading level="h1">TELUS Device Catalogue</DisplayHeading>
     </div>
     <NavBar/>
-    
-
+    <div>
     <FlexGrid limitWidth>
       <FlexGrid.Row>
-        <FlexGrid.Col>
-          <Card>
-            <Image src={iphoneImg}/>
-          </Card>
-        </FlexGrid.Col>
-        <FlexGrid.Col>
-          <Card>
-            <Image src={watchImg}/>
-          </Card>
-          iphone img and watch image with the link to their page
-        </FlexGrid.Col>
+        <DeviceCard img={iphoneImg} path="/iphones" text="Check out the iPhone devices"/>
+        <DeviceCard img={watchImg} path="/watches" text="Check out the watches"/>
       </FlexGrid.Row>
-    </FlexGrid>
-    <Heading level="h3">Mobile solutions for all your needs.</Heading>
+    </FlexGrid> 
+    </div>
+    <div className="bottom-text">
+      <Link href="https://www.telus.com/en/mobility"  invert>
+        <Heading level="h2" >
+          Mobile solutions for all your needs.
+        </Heading>
+      </Link>
+    </div>
     
   </React.Fragment>
 )

@@ -1,0 +1,21 @@
+.display-heading {
+  padding: 1.5rem;
+}
+.browse-more {
+  text-align: center;
+}
+.bottom-text {
+  padding: 1.5rem;
+  text-align: center;
+} 
+.not-found {
+  text-align: center;
+  /* not working */
+}
+.device-card {
+  padding: 1.5rem;
+}
+.device-image {
+  padding: 1.5rem;
+  justify-content: center;
+}
