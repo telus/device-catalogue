@@ -5,7 +5,7 @@ import HairlineDivider from '@tds/core-hairline-divider';
 
 const NavBar = () => {
   return (
-    <Box inset={3} style={{ background: '#4b286d' }} inline between={3}>
+    <Box inset={3} className="nav-bar" inline between={3}>
       <Link href="http://localhost:8080"  invert>
         Home
       </Link>
@@ -18,7 +18,6 @@ const NavBar = () => {
         Watches
       </Link>
     </Box>
-
   )
 }
 export default NavBar;

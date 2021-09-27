@@ -4,7 +4,7 @@ import NavBar from '../Reusable/NavBar';
 import BrowseMoreLink from '../Reusable/BrowseMoreLink';
 import Paragraph from '@tds/core-paragraph';
 import Text from '@tds/core-text';
-import Strong from '@tds/core-strong';
+import ChevronLink from '@tds/core-chevron-link';
 const NotFound = () => {
   return (
     <React.Fragment>
@@ -13,17 +13,21 @@ const NotFound = () => {
       </div>
       <NavBar/>
       <div className="not-found">
+        <Heading level="h1">
+          Looks like there was a problem serving the requested page.
+        </Heading>
+        <br/>
         <Paragraph>
-          <Strong>
-            Oops!
-          </Strong>
-          <br/>
           <Text>
-            404 - Page not found!
+            What would you like to do?
           </Text>
         </Paragraph>
       </div>
-      <BrowseMoreLink path="/" text="Go to Device Catalogue"/>
+      <div className="not-found-help-link">
+        <ChevronLink href="/">Return to Device Catalogue</ChevronLink>
+        <br/>
+        <ChevronLink href="https://www.telus.com/en/bc/support/contact-us">Contact us</ChevronLink>
+      </div>
     </React.Fragment>
 
   )

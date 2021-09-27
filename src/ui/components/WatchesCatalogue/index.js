@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-//import Heading from '@tds/core-heading';
 import DisplayHeading from '@tds/core-display-heading';
 import NavBar from '../Reusable/NavBar';
 import BrowseMoreLink from '../Reusable/BrowseMoreLink';
 import DeviceCardGroup from '../Reusable/DeviceCardGroup';
 import watchImg from '../../../../public/images/watch.jpg';
 import axios from 'axios';
+import DeviceNotFound from '../Reusable/DeviceNotFound';
 
 const WatchesCatalogue = () => {
   
@@ -29,7 +29,10 @@ const WatchesCatalogue = () => {
         <DisplayHeading level="h1">Watches Catalogue</DisplayHeading>
       </div>
       <NavBar/>
-      <DeviceCardGroup data={data && data} img={watchImg}/>
+      {data && data.length > 0
+      ? <DeviceCardGroup data={data && data} img={watchImg}/>
+      : <DeviceNotFound/>
+      }
       <BrowseMoreLink path="/iphones" text="Check out the iPhones"/>
     </React.Fragment>
   )

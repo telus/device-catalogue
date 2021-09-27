@@ -15,14 +15,16 @@ return (
       <DisplayHeading level="h1">TELUS Device Catalogue</DisplayHeading>
     </div>
     <NavBar/>
-    <div>
-    <FlexGrid limitWidth>
+    <FlexGrid id="catalogues-container">
       <FlexGrid.Row>
-        <DeviceCard img={iphoneImg} path="/iphones" text="Check out the iPhone devices"/>
-        <DeviceCard img={watchImg} path="/watches" text="Check out the watches"/>
+        <FlexGrid.Col>
+          <DeviceCard img={iphoneImg} path="/iphones" text="iPhones"/>
+        </FlexGrid.Col>
+        <FlexGrid.Col>
+          <DeviceCard img={watchImg} path="/watches" text="Watches"/>
+       </FlexGrid.Col>
       </FlexGrid.Row>
     </FlexGrid> 
-    </div>
     <div className="bottom-text">
       <Link href="https://www.telus.com/en/mobility"  invert>
         <Heading level="h2" >
@@ -30,7 +32,6 @@ return (
         </Heading>
       </Link>
     </div>
-    
   </React.Fragment>
 )
 }
