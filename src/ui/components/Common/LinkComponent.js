@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom';
 
-const LinkComponent = ({ TDSLink, hasIcon, children, ...rest }) => (
+const LinkComponent = ({ TDSLink, children, ...rest }) => (
   <TDSLink {...rest} reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}>
     {children}
   </TDSLink>

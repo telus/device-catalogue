@@ -4,7 +4,7 @@ import CSSReset from '@tds/core-css-reset'
 import Home from '../Home';
 import Watches from '../Watches';
 import IPhones from '../IPhones';
-import NotFound from '../NotFound';
+import PageNotFound from '../PageNotFound';
 
 const App = () => (
   <Router>
@@ -20,7 +20,7 @@ const App = () => (
         <IPhones />
       </Route>
       <Route>
-        <NotFound />
+        <PageNotFound />
       </Route>
     </Switch>
   </Router>
