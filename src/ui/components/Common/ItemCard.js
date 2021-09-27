@@ -16,17 +16,18 @@ const ItemCard = ({ brand, name, price, image }) => {
           src={image}
           alt={name}
           width={200}
+          height={200}
         />
         <Heading level="h3" id="itemCard-brand">{brand}</Heading>
         <Heading level="h4" id="device-card-name">
           {name}
         </Heading>
         <PriceLockup
-          id="device-card-price"
           size="small"
-          price={price}
           topText="Starting at"
+          price={price}
           signDirection="left"
+          id="device-card-price"
         />
         <HairlineDivider />
         <Paragraph size="small">
