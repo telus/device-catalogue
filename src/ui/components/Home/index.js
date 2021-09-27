@@ -8,18 +8,7 @@ import iphoneImg from '../../../../public/images/iphone.jpg';
 import watchImg from '../../../../public/images/watch.jpg';
 import DeviceCard from '../Reusable/DeviceCard';
 const Home = () => {
-  // {
-  //   image: iPhoneImg,
-  //   path: "/iphones",
-  //   altText: "Apple iPhone",
-  //   linkText: "iPhones"
-  // },
-  // {
-  //   image: watchImg,
-  //   path: "/watches",
-  //   altText: "Apple Watch",
-  //   linkText: "Watches"
-  // }
+
 return (
   <React.Fragment>
     <div className="display-heading">
