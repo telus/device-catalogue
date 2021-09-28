@@ -1,3 +1,14 @@
+# Blockers
+Was using Jest to perfom Unit testing while testing the routes ran into image import issue
+When I import image files, Jest tries to interpret the binary codes of the images as .js, hence runs into errors.
+The only way out is to mock a default response anytime jest sees an image import
+So in the config setting added moduleNameMapper under jest config
+This should mock the image wherever the import happens, but still running into error might need little more time to resolve
+
+Reference:
+https://jestjs.io/docs/webpack
+
+
 # Device Catalogue
 
 A customer would like to browse all the Apple devices available for purchase. Create an application with a component that reads and displays devices from the local restful API on port `8081`.
