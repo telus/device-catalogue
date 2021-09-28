@@ -1,0 +1,39 @@
+#device-card-name {
+  color: #4B286D;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#itemCard-brand  {
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.header-text, .footer-link {
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid-column {
+  padding-bottom: 2rem;
+}
+
+#itemCard-img {
+  place-self: center;
+}
+
+.main-links {
+  display: grid;
+  justify-items: center;
+}
+
+.info-text {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.item-links {
+  align-items: center;
+}
