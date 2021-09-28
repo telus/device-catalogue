@@ -6,7 +6,7 @@ Device Catalogue allows the user to browse through Apple iPhone devices and Appl
 
 Node, Express, Axios, Jest, React
 
-[![Watch the video](https://github.com/Lepusconstructor/device-catalogue/blob/create-catalogue/Device%20Catelog.mp4?raw=true)
+![Alt Text](https://github.com/Lepusconstructor/device-catalogue/blob/create-catalogue/device%20catalogue%20gif.gif?raw=true)
 
 ### Hurdle
 
