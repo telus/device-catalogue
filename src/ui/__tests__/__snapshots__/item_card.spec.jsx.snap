@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item card renders correctly 1`] = `
+<div
+  className="sc-bdfBQB cXMDiG sc-hKgJUU itbWqN sc-hKgJUU itbWqN"
+>
+  <div
+    className="sc-bdfBQB dnrHxh"
+  >
+    <img
+      alt="iPhone12"
+      className="Image__StyledImage-b16p20-0 DCldW"
+      height={200}
+      id="itemCard-img"
+      src=""
+      width={200}
+    />
+    <h3
+      className="Heading__StyledHeading-mpz92r-0 gslrXd"
+      data-testid="heading"
+      id="itemCard-brand"
+    >
+      Apple
+    </h3>
+    <h4
+      className="Heading__StyledHeading-mpz92r-0 jGuBnj"
+      data-testid="heading"
+      id="device-card-name"
+    >
+      iPhone12
+    </h4>
+    <div
+      className="sc-bdfBQB IqheP sc-jSgvzq gJTxId sc-jSgvzq gJTxId"
+    >
+      <div
+        className="sc-bdfBQB dtABCB"
+      >
+        <span
+          className="Text__StyledText-sc-1m0rr67-0 htpddo"
+          size="small"
+        >
+          Starting at
+        </span>
+        <div
+          className="PriceLockup__StyledRateTextWrapper-crmhv4-4 kCgybC"
+        >
+          <div
+            className="sc-bdfBQB fKojHK sc-gKseQn hqfjIM sc-gKseQn hqfjIM"
+          >
+            <div
+              className="sc-bdfBQB fKojHK"
+            >
+              <span
+                aria-hidden="false"
+                className="PriceLockup__StyledDollarSign-crmhv4-2 iteKpH"
+                data-testid="dollarSign"
+                size="small"
+              >
+                $
+              </span>
+              <span
+                aria-hidden="false"
+                className="PriceLockup__StyledPriceValue-crmhv4-1 kbdTWc"
+                data-testid="priceValue"
+                size="small"
+              >
+                121
+              </span>
+              <span
+                className="PriceLockup__StyledPriceValue-crmhv4-1 kbdTWc"
+                data-testid="priceValue"
+                size="small"
+              >
+                <span
+                  className="Text__StyledText-sc-1m0rr67-0 sc-iBPTik eCTkyE qFagl"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr
+      className="HairlineDivider__StyledHairlineDivider-biamlk-0 lnWyrV"
+    />
+    <p
+      className="Paragraph__StyledParagraph-efl81j-0 dbIdbC"
+      size="small"
+    >
+      TELUS Easy Payment Applied.
+      <br />
+      Taxes due upfront.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Item card renders when not passed all props 1`] = `
+<div
+  className="sc-bdfBQB cXMDiG sc-hKgJUU itbWqN sc-hKgJUU itbWqN"
+>
+  <div
+    className="sc-bdfBQB dnrHxh"
+  >
+    <img
+      alt="iPhone12"
+      className="Image__StyledImage-b16p20-0 DCldW"
+      height={200}
+      id="itemCard-img"
+      width={200}
+    />
+    <h3
+      className="Heading__StyledHeading-mpz92r-0 gslrXd"
+      data-testid="heading"
+      id="itemCard-brand"
+    >
+      Apple
+    </h3>
+    <h4
+      className="Heading__StyledHeading-mpz92r-0 jGuBnj"
+      data-testid="heading"
+      id="device-card-name"
+    >
+      iPhone12
+    </h4>
+    <div
+      className="sc-bdfBQB IqheP sc-jSgvzq gJTxId sc-jSgvzq gJTxId"
+    >
+      <div
+        className="sc-bdfBQB dtABCB"
+      >
+        <span
+          className="Text__StyledText-sc-1m0rr67-0 htpddo"
+          size="small"
+        >
+          Starting at
+        </span>
+        <div
+          className="PriceLockup__StyledRateTextWrapper-crmhv4-4 kCgybC"
+        >
+          <div
+            className="sc-bdfBQB fKojHK sc-gKseQn hqfjIM sc-gKseQn hqfjIM"
+          >
+            <div
+              className="sc-bdfBQB fKojHK"
+            >
+              <span
+                aria-hidden="false"
+                className="PriceLockup__StyledDollarSign-crmhv4-2 iteKpH"
+                data-testid="dollarSign"
+                size="small"
+              >
+                $
+              </span>
+              <span
+                aria-hidden="false"
+                className="PriceLockup__StyledPriceValue-crmhv4-1 kbdTWc"
+                data-testid="priceValue"
+                size="small"
+              >
+                121
+              </span>
+              <span
+                className="PriceLockup__StyledPriceValue-crmhv4-1 kbdTWc"
+                data-testid="priceValue"
+                size="small"
+              >
+                <span
+                  className="Text__StyledText-sc-1m0rr67-0 sc-iBPTik eCTkyE qFagl"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr
+      className="HairlineDivider__StyledHairlineDivider-biamlk-0 lnWyrV"
+    />
+    <p
+      className="Paragraph__StyledParagraph-efl81j-0 dbIdbC"
+      size="small"
+    >
+      TELUS Easy Payment Applied.
+      <br />
+      Taxes due upfront.
+    </p>
+  </div>
+</div>
+`;

@@ -5,8 +5,8 @@ The API has two routes `/watches` which returns a list of watches and `/iphones`
 
 ## Application Requirements
 
-* Create a `/watches` route that displays a grid of watch device cards - reference [card design](#reference-device-card)
-* Create a `/iphones` route that displays a grid of iPhone device cards - reference [card design](#reference-device-card)
+* Create a `/watches` route that displays a grid of watch Item cards - reference [card design](#reference-device-card)
+* Create a `/iphones` route that displays a grid of iPhone Item cards - reference [card design](#reference-device-card)
 * Each route represents a page in the application. Each page should have a heading indicating the type of device listed on the page and a grid showing all the devices in that category.
 * An index page with a list of all pages (i.e. A watch page and phone page).
 * Unit tests for your work where it makes sense. At Telus Digital we pride ourselves on having applications with great test coverage. Please be prepared to talk about your testing choices.
@@ -55,21 +55,21 @@ Running the tests
 npm run unit
 ```
 
-## Reference Device Card
+## Reference Item card
 
-All device cards should look as close as possible to the following device card:
+All Item cards should look as close as possible to the following Item card:
 
-Note: all device cards should simply showcase the name of the device, the brand and price with the following copy:
+Note: all Item cards should simply showcase the name of the device, the brand and price with the following copy:
 
 > TELUS Easy Payment and Bring-It-Back applied. Read legal footnote Taxes due upfront.
 
-![device card](https://github.com/telus/device-catalogue/blob/master/public/images/device-card.png)
+![Item card](https://github.com/telus/device-catalogue/blob/master/public/images/device-card.png)
 
-## Reference Device Grid
+## Reference Item grid
 
-The device grid should look as close as possible to the following device grid but exact spacing isn't required:
+The Item grid should look as close as possible to the following Item grid but exact spacing isn't required:
 
-![device card](https://github.com/telus/device-catalogue/blob/master/public/images/device-grid.png)
+![Item card](https://github.com/telus/device-catalogue/blob/master/public/images/device-grid.png)
 
 ## Useful TDS components
 
