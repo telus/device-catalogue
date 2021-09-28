@@ -4,8 +4,8 @@ import DisplayHeading from '@tds/core-display-heading';
 import Link from '@tds/core-link';
 import FlexGrid from '@tds/core-flex-grid';
 import NavBar from '../Reusable/NavBar';
-import iphoneImg from '../../../../public/images/iphone.jpg';
-import watchImg from '../../../../public/images/watch.jpg';
+import iphoneImg from '/public/images/iphone.jpg';
+import watchImg from '/public/images/watch.jpg';
 import DeviceCard from '../Reusable/DeviceCard';
 const Home = () => {
 

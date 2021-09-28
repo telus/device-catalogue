@@ -11,7 +11,9 @@ import HairlineDivider from '@tds/core-hairline-divider';
 import { FootnoteLink } from '@tds/core-terms-and-conditions';
 import PriceLockup from '@tds/core-price-lockup';
 const DeviceCard = ({ img, path, text, brand, name, price}) => {
-  
+  const handleFootnoteClick = () => {
+    console.log('footnote is clicked, terms and condition should open up from the bottom of the window');
+  }
   return (
     <div className="device-card">
       <Card fullHeight>
@@ -19,12 +21,24 @@ const DeviceCard = ({ img, path, text, brand, name, price}) => {
           {path
            ? <Link href={path}>
               <div className="device-image">
-                <Image src={img} width={70} />
+                <Image 
+                  src={img} 
+                  width={200}
+                  height={200}
+                  alt="device-image"
+                />
                 <br/>
                 {text}
               </div>
             </Link>
-            :<div className="device-image"><Image src={img} width={70}/></div>
+            :<div className="device-image">
+              <Image 
+                src={img} 
+                width={200}
+                height={200}
+                alt="device-image"
+              />
+            </div>
           }
           {price &&
           <React.Fragment>
@@ -39,7 +53,7 @@ const DeviceCard = ({ img, path, text, brand, name, price}) => {
             <Paragraph size="small">
               <Text>
                 TELUS Easy Payment and Bring-It-Back applied.
-                <FootnoteLink number={4} />
+                <FootnoteLink number={4} onClick={handleFootnoteClick} copy='en'/>
                 <br/>
                 Taxes due upfront.
               </Text>

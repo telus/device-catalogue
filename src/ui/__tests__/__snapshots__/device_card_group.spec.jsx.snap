@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Device card group renders 404 if the data is corrupted 1`] = `
+<div
+  className="not-found"
+>
+  <h1
+    className="Heading__StyledHeading-mpz92r-0 wprAR"
+    data-testid="heading"
+  >
+    Looks like the devices requested cannot be found.
+  </h1>
+  <br />
+</div>
+`;
