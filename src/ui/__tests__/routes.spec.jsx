@@ -1,18 +1,53 @@
-import React from 'react';
-import {MemoryRouter} from 'react-router-dom';
-import {mount, configure} from 'enzyme';
-import App from '../components/App';
-import Home from '../components/Home';
-import NotFound from '../components/NotFound';
+import React from "react";
+import { MemoryRouter } from "react-router-dom";
+import { mount, configure } from "enzyme";
+import App from "../components/App";
+import Home from "../components/Home";
+import Watches from "../components/Watches";
+import IPhones from "../components/IPhones";
+import NotFound from "../components/NotFound";
 
-describe('Application routes', () => {
-  it('should render a Home component', () => {
+describe("Application routes", () => {
+  it("should render a Home component", () => {
     const wrapper = mount(
-      <MemoryRouter initialEntries={['/']}>
+      <MemoryRouter initialEntries={["/"]}>
         <App />
       </MemoryRouter>
     );
 
     expect(wrapper.find(Home)).toHaveLength(1);
+  });
+
+  it("should render a Watches component", () => {
+    const wrapper = mount(
+      <MemoryRouter initialEntries={["/watches"]}>
+        <Watches />
+      </MemoryRouter>
+    );
+
+    expect(wrapper.find(Watches)).toHaveLength(1);
+  });
+
+  it("should render a iPhones component", () => {
+    const wrapper = mount(
+      <MemoryRouter initialEntries={["/iphones"]}>
+        <IPhones />
+      </MemoryRouter>
+    );
+
+    expect(wrapper.find(IPhones)).toHaveLength(1);
+  });
+
+  it("should render a 404 page", () => {
+    const wrapper = mount(
+      <MemoryRouter
+        await
+        initialEntries={["/adkjskdj", "/ahello", "/some-device"]}
+      >
+        <NotFound />
+      </MemoryRouter>
+    );
+
+    expect(wrapper.find(NotFound)).toHaveLength(1);
   });
 });
