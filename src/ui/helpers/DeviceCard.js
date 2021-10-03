@@ -11,6 +11,7 @@ import Paragraph from "@tds/core-paragraph";
 /**
  * A component that renders a Telus device card with image, name and product info
  * @param {Object} device
+ * @param {imagefile} image
  */
 const DeviceCard = ({ device, image }) => {
   return (

@@ -8,12 +8,31 @@
     "unit": "jest"
   },
   "dependencies": {
-    "@tds/core-heading": "^3.0.8",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@tds/core-a11y-content": "^2.3.0",
+    "@tds/core-box": "^2.4.0",
+    "@tds/core-button-link": "^3.3.0",
+    "@tds/core-card": "^2.6.0",
+    "@tds/core-colours": "^2.2.1",
+    "@tds/core-css-reset": "^3.0.1",
+    "@tds/core-flex-grid": "^4.1.0",
+    "@tds/core-hairline-divider": "^2.1.0",
+    "@tds/core-heading": "^3.1.0",
+    "@tds/core-image": "^2.1.0",
+    "@tds/core-paragraph": "^2.1.0",
+    "@tds/core-price-lockup": "^2.4.0",
+    "axios": "^0.22.0",
+    "cors": "^2.8.5",
     "enzyme": "^3.11.0",
     "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "jest-file-loader": "^1.0.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "react-test-renderer": "^17.0.2",
+    "styled-components": "^5.3.1",
+    "waait": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",

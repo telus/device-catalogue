@@ -9,6 +9,10 @@ import A11yContent from "@tds/core-a11y-content";
 import iphoneImage from "../../../../public/images/iphone.jpg";
 import watchImage from "../../../../public/images/watch.jpg";
 
+/**
+ * Home page that shows two cards with links to go to watches/iphones page.
+ * @returns
+ */
 const Home = () => {
   return (
     <FlexGrid>

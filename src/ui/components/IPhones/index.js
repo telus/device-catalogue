@@ -6,6 +6,10 @@ import config from "../../../config.jsx";
 import DeviceCard from "../../helpers/DeviceCard";
 import iphoneImage from "../../../../public/images/iphone.jpg";
 
+/**
+ * iPhones page - displays a grid of watches and their prices using a DeviceCard component
+ * @returns a render of the iPhones page
+ */
 const IPhones = () => {
   const [iphones, setIPhones] = useState([]);
 
