@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Device Card renders correctly 1`] = `
+<div
+  className="sc-bdfBQB cXMDiG sc-hKgJUU jUyzJH sc-hKgJUU jUyzJH"
+>
+  <div
+    className="Row__StyledRow-sc-1goz0ht-0 dkMqEl"
+  >
+    <div
+      className="sc-bdfBQB eJjfwz"
+    >
+      <img
+        alt="Image of iPhone SE"
+        className="Image__StyledImage-b16p20-0 DCldW"
+        height={200}
+        src="../public/images/iphone.jpg"
+        width={160}
+      />
+    </div>
+  </div>
+  <div
+    className="sc-bdfBQB kMTnnl"
+  >
+    <h2
+      className="Heading__StyledHeading-mpz92r-0 gslrXd"
+      data-testid="heading"
+    >
+       
+      Apple
+    </h2>
+    <h3
+      className="Heading__StyledHeading-mpz92r-0 oINeZ"
+      data-testid="heading"
+    >
+       
+      iPhone SE
+    </h3>
+  </div>
+  <div
+    className="sc-bdfBQB kueWEy"
+  >
+    <div
+      className="sc-bdfBQB fsBlxx sc-jSgvzq gJTxId sc-jSgvzq gJTxId"
+    >
+      <div
+        className="sc-bdfBQB dtABCB"
+      >
+        <div
+          className="PriceLockup__StyledRateTextWrapper-crmhv4-4 kCgybC"
+        >
+          <div
+            className="sc-bdfBQB ltneA sc-gKseQn hqfjIM sc-gKseQn hqfjIM"
+          >
+            <div
+              className="sc-bdfBQB fKojHK"
+            >
+              <span
+                aria-hidden="false"
+                className="PriceLockup__StyledDollarSign-crmhv4-2 dhvgYu"
+                data-testid="dollarSign"
+                size="medium"
+              >
+                $
+              </span>
+              <span
+                aria-hidden="false"
+                className="PriceLockup__StyledPriceValue-crmhv4-1 GTsnE"
+                data-testid="priceValue"
+                size="medium"
+              >
+                599
+              </span>
+              <span
+                className="PriceLockup__StyledPriceValue-crmhv4-1 GTsnE"
+                data-testid="priceValue"
+                size="medium"
+              >
+                <span
+                  className="Text__StyledText-sc-1m0rr67-0 sc-iBPTik eCTkyE qFagl"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-bdfBQB fAXBKI"
+  >
+    <hr
+      className="HairlineDivider__StyledHairlineDivider-biamlk-0 lnWyrV"
+    />
+    <p
+      className="Paragraph__StyledParagraph-efl81j-0 jlIShN"
+      size="medium"
+    >
+      TELUS Easy Payment and Bring-It-Back applied. Read legal footnote Taxes due upfront.
+       
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Device Card renders correctly 2`] = `
+<div
+  className="sc-bdfBQB cXMDiG sc-hKgJUU jUyzJH sc-hKgJUU jUyzJH"
+>
+  <div
+    className="Row__StyledRow-sc-1goz0ht-0 dkMqEl"
+  >
+    <div
+      className="sc-bdfBQB eJjfwz"
+    >
+      <img
+        alt="Image of iPhone SE"
+        className="Image__StyledImage-b16p20-0 DCldW"
+        height={200}
+        src="../public/images/iphone.jpg"
+        width={160}
+      />
+    </div>
+  </div>
+  <div
+    className="sc-bdfBQB kMTnnl"
+  >
+    <h2
+      className="Heading__StyledHeading-mpz92r-0 gslrXd"
+      data-testid="heading"
+    >
+       
+      Apple
+    </h2>
+    <h3
+      className="Heading__StyledHeading-mpz92r-0 oINeZ"
+      data-testid="heading"
+    >
+       
+      iPhone SE
+    </h3>
+  </div>
+  <div
+    className="sc-bdfBQB kueWEy"
+  >
+    <div
+      className="sc-bdfBQB fsBlxx sc-jSgvzq gJTxId sc-jSgvzq gJTxId"
+    >
+      <div
+        className="sc-bdfBQB dtABCB"
+      >
+        <div
+          className="PriceLockup__StyledRateTextWrapper-crmhv4-4 kCgybC"
+        >
+          <div
+            className="sc-bdfBQB ltneA sc-gKseQn hqfjIM sc-gKseQn hqfjIM"
+          >
+            <div
+              className="sc-bdfBQB fKojHK"
+            >
+              <span
+                aria-hidden="false"
+                className="PriceLockup__StyledDollarSign-crmhv4-2 dhvgYu"
+                data-testid="dollarSign"
+                size="medium"
+              >
+                $
+              </span>
+              <span
+                aria-hidden="false"
+                className="PriceLockup__StyledPriceValue-crmhv4-1 GTsnE"
+                data-testid="priceValue"
+                size="medium"
+              >
+                599
+              </span>
+              <span
+                className="PriceLockup__StyledPriceValue-crmhv4-1 GTsnE"
+                data-testid="priceValue"
+                size="medium"
+              >
+                <span
+                  className="Text__StyledText-sc-1m0rr67-0 sc-iBPTik eCTkyE qFagl"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-bdfBQB fAXBKI"
+  >
+    <hr
+      className="HairlineDivider__StyledHairlineDivider-biamlk-0 lnWyrV"
+    />
+    <p
+      className="Paragraph__StyledParagraph-efl81j-0 jlIShN"
+      size="medium"
+    >
+      TELUS Easy Payment and Bring-It-Back applied. Read legal footnote Taxes due upfront.
+       
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Device Card renders correctly with props 1`] = `"<div class=\\"Row__StyledRow-sc-1goz0ht-0 dkMqEl\\"><div class=\\"sc-bdfBQB eJjfwz\\"><img src=\\"public/images/iphone.jpg\\" width=\\"160\\" height=\\"200\\" alt=\\"Image of iPhone SE\\" class=\\"Image__StyledImage-b16p20-0 DCldW\\"></div></div><div class=\\"sc-bdfBQB kMTnnl\\"><h2 data-testid=\\"heading\\" class=\\"Heading__StyledHeading-mpz92r-0 gslrXd\\"> Apple</h2><h3 data-testid=\\"heading\\" class=\\"Heading__StyledHeading-mpz92r-0 oINeZ\\"> iPhone SE</h3></div><div class=\\"sc-bdfBQB kueWEy\\"><div class=\\"sc-bdfBQB fsBlxx sc-jSgvzq gJTxId sc-jSgvzq gJTxId\\"><div class=\\"sc-bdfBQB dtABCB\\"><div class=\\"PriceLockup__StyledRateTextWrapper-crmhv4-4 kCgybC\\"><div class=\\"sc-bdfBQB ltneA sc-gKseQn hqfjIM sc-gKseQn hqfjIM\\"><div class=\\"sc-bdfBQB fKojHK\\"><span aria-hidden=\\"false\\" data-testid=\\"dollarSign\\" class=\\"PriceLockup__StyledDollarSign-crmhv4-2 dhvgYu\\">$</span><span data-testid=\\"priceValue\\" aria-hidden=\\"false\\" class=\\"PriceLockup__StyledPriceValue-crmhv4-1 GTsnE\\">599</span><span data-testid=\\"priceValue\\" class=\\"PriceLockup__StyledPriceValue-crmhv4-1 GTsnE\\"><span class=\\"Text__StyledText-sc-1m0rr67-0 sc-iBPTik eCTkyE qFagl\\"></span></span></div></div></div></div></div></div><div class=\\"sc-bdfBQB fAXBKI\\"><hr class=\\"HairlineDivider__StyledHairlineDivider-biamlk-0 lnWyrV\\"><p class=\\"Paragraph__StyledParagraph-efl81j-0 jlIShN\\">TELUS Easy Payment and Bring-It-Back applied. Read legal footnote Taxes due upfront. </p></div>"`;
