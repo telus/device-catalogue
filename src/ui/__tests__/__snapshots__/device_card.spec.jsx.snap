@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Device card renders correctly 1`] = `
+<div
+  className="device-card"
+>
+  <div
+    className="sc-dlfnuX Aazwe sc-hKgJUU itbWqN sc-hKgJUU itbWqN"
+  >
+    <div
+      className="sc-dlfnuX gRMItJ"
+    >
+      <div
+        className="device-image"
+      >
+        <img
+          alt="device-image"
+          className="Image__StyledImage-b16p20-0 DCldW"
+          height={200}
+          src=""
+          width={200}
+        />
+      </div>
+      <strong
+        className="Strong__StyledStrong-sc-19dhku5-0 jfUeiS"
+        id="device-brand"
+      >
+        Apple
+      </strong>
+      <h4
+        className="Heading__StyledHeading-mpz92r-0 jGuBnj"
+        data-testid="heading"
+        id="device-name"
+      >
+        iPhone12
+      </h4>
+      <div
+        className="sc-dlfnuX fzVLgT sc-kstqJO kmwZDm sc-kstqJO kmwZDm"
+      >
+        <div
+          className="sc-dlfnuX dvsJHd"
+        >
+          <div
+            className="PriceLockup__StyledRateTextWrapper-crmhv4-4 kCgybC"
+          >
+            <div
+              className="sc-dlfnuX ebYjZi sc-hBEYId fkewPS sc-hBEYId fkewPS"
+            >
+              <div
+                className="sc-dlfnuX ebYjZi"
+              >
+                <span
+                  aria-hidden="false"
+                  className="PriceLockup__StyledDollarSign-crmhv4-2 iteKpH"
+                  data-testid="dollarSign"
+                  size="small"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="false"
+                  className="PriceLockup__StyledPriceValue-crmhv4-1 kbdTWc"
+                  data-testid="priceValue"
+                  size="small"
+                >
+                  121
+                </span>
+                <span
+                  className="PriceLockup__StyledPriceValue-crmhv4-1 kbdTWc"
+                  data-testid="priceValue"
+                  size="small"
+                >
+                  <span
+                    className="Text__StyledText-sc-1m0rr67-0 sc-fodVek eCTkyE iRdaTx"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="HairlineDivider__StyledHairlineDivider-biamlk-0 lnWyrV"
+      />
+      <p
+        className="Paragraph__StyledParagraph-efl81j-0 dbIdbC"
+        size="small"
+      >
+        <span
+          className="Text__StyledText-sc-1m0rr67-0 ERlyH"
+          size="base"
+        >
+          TELUS Easy Payment and Bring-It-Back applied.
+          <sup>
+            <button
+              className="FootnoteLink__StyledFootnoteLink-pzcbe1-0 dkrTKu"
+              data-tds-id="footnote-link"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="A11yContent__StyledA11yContent-sc-15wexwk-0 jolBxv"
+              >
+                Read legal footnote
+              </span>
+              4
+            </button>
+          </sup>
+          <br />
+          Taxes due upfront.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Device card renders correctly with just 2 props 1`] = `
+<div
+  className="device-card"
+>
+  <div
+    className="sc-dlfnuX Aazwe sc-hKgJUU itbWqN sc-hKgJUU itbWqN"
+  >
+    <div
+      className="sc-dlfnuX gRMItJ"
+    >
+      <div
+        className="device-image"
+      >
+        <img
+          alt="device-image"
+          className="Image__StyledImage-b16p20-0 DCldW"
+          height={200}
+          src=""
+          width={200}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

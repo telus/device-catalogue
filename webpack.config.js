@@ -7,6 +7,7 @@ module.exports = {
   entry: './src/client.jsx',
   devServer: {
     contentBase: './dist',
+    historyApiFallback: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -26,6 +27,10 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/, 
+        type: "asset"
       },
       {
         test: /\.css$/,

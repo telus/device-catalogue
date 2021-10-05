@@ -1,3 +1,29 @@
+# Device Catalogue for Apple
+
+Device Catalogue allows the user to browse through Apple iPhone devices and Apple watches.
+
+## Dependencies
+
+Node, Express, Axios, Jest, React
+
+![Alt Text](https://github.com/Lepusconstructor/device-catalogue/blob/create-catalogue/device%20catalogue%20gif.gif?raw=true)
+
+### Hurdle
+
+The image import fails jest unit testing test case for routing, tried to solve it with some additional jest config and mock files but it still fails the test. Need to investigate further. While it was frustrating that it didn't work, jest was very useful when it comes to making sure all the required prop types are included in the components.
+
+## Reference
+- https://github.com/laurtann/device-catalogue
+- https://survivejs.com/webpack/loading/images/
+- https://webpack.js.org/configuration/dev-server/
+- https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
+- https://www.npmjs.com/package/cors
+- https://jestjs.io/docs/snapshot-testing
+- https://www.telus.com/en/
+
+
+
+
 # Device Catalogue
 
 A customer would like to browse all the Apple devices available for purchase. Create an application with a component that reads and displays devices from the local restful API on port `8081`.
