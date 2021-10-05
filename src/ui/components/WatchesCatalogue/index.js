@@ -10,18 +10,15 @@ import DeviceNotFound from '../Reusable/DeviceNotFound';
 const WatchesCatalogue = () => {
   
   const [data, setData] = useState([]);
-  const [fetching, setFetching] = useState(true);
   
   //get watch data and store it in state
   useEffect(() => {
     axios.get("http://localhost:8081/watches/").then(res => {
       setData(res.data.data);
-      setFetching(false);
     }).catch(err => {
       console.log(err);
-      setFetching(false);
     });
-  }, []);
+  }, [data]);
   
   return (
     <React.Fragment>

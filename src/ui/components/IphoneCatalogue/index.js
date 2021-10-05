@@ -9,18 +9,15 @@ import DeviceNotFound from '../Reusable/DeviceNotFound';
 
 const IphoneCatalogue = () => {
   const [data, setData] = useState([]);
-  const [fetching, setFetching] = useState(true);
-
+  
   //get iphone data and store it in state
   useEffect(() => {
     axios.get("http://localhost:8081/iphones/").then(res => {
       setData(res.data.data);
-      setFetching(false);
     }).catch(err => {
       console.log(err);
-      setFetching(false);
     });
-  }, []);
+  }, [data]);
 
   return (
     <React.Fragment>
