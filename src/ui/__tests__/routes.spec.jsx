@@ -1,6 +1,6 @@
 import React from 'react';
-import {MemoryRouter} from 'react-router-dom';
-import {mount, configure} from 'enzyme';
+import { MemoryRouter } from 'react-router-dom';
+import { mount, configure } from 'enzyme';
 import App from '../components/App';
 import Home from '../components/Home';
 import NotFound from '../components/NotFound';
