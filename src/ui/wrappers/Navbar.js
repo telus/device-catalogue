@@ -47,14 +47,13 @@ const pages = [
 
 const Navbar = () => {
   const location = useLocation();
-  console.log(location.pathname);
 
   return (
     <Box style={{ background: colorTelusPurple }}>
       <NavContainer>
         <ul>
           {pages.map((page) => (
-            <>
+            <React.Fragment key={page.path}>
               <li className={location.pathname === page.path ? 'active' : ''}>
                 <Link
                   invert={location.pathname === page.path ? false : true}
@@ -64,7 +63,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <HairlineDivider vertical gradient />
-            </>
+            </React.Fragment>
           ))}
         </ul>
       </NavContainer>
