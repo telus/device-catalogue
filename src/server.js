@@ -58,6 +58,12 @@ router.get('/iphones', function (req, res) {
 
 app.use('/', router);
 
-app.listen(PORT, () => {
-  console.log(`API started on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`API started on port ${PORT}`);
+  });
+}
+
+module.exports = {
+  router,
+};
