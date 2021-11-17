@@ -8,12 +8,14 @@
     "unit": "jest"
   },
   "dependencies": {
+    "@tds/core-css-reset": "^3.0.1",
     "@tds/core-heading": "^3.0.8",
     "enzyme": "^3.11.0",
     "express": "^4.17.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",
