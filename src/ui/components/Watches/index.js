@@ -8,6 +8,7 @@ import Spinner from '@tds/core-spinner';
 import Text from '@tds/core-text';
 import A11yContent from '@tds/core-a11y-content';
 import DeviceCard from '../../wrappers/DeviceCard';
+import ErrorBoundary from '../../wrappers/ErrorBoundary';
 import watchImage from '../../../../public/images/watch.jpg';
 
 const Watches = () => {
@@ -76,4 +77,10 @@ const Watches = () => {
   );
 };
 
-export default Watches;
+export default function WatchesWithErrorBoundary() {
+  return (
+    <ErrorBoundary>
+      <Watches />
+    </ErrorBoundary>
+  );
+}

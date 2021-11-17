@@ -8,6 +8,7 @@ import Spinner from '@tds/core-spinner';
 import Text from '@tds/core-text';
 import A11yContent from '@tds/core-a11y-content';
 import DeviceCard from '../../wrappers/DeviceCard';
+import ErrorBoundary from '../../wrappers/ErrorBoundary';
 import iphoneImage from '../../../../public/images/iphone.jpg';
 
 const IPhones = () => {
@@ -76,4 +77,10 @@ const IPhones = () => {
   );
 };
 
-export default IPhones;
+export default function IPhonesWithErrorBoundary() {
+  return (
+    <ErrorBoundary>
+      <IPhones />
+    </ErrorBoundary>
+  );
+}
