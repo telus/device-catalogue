@@ -7,6 +7,7 @@ module.exports = {
   entry: './src/client.jsx',
   devServer: {
     contentBase: './dist',
+    historyApiFallback: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -33,7 +34,15 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   }
 }
