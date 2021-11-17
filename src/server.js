@@ -3,6 +3,15 @@ var app = express();
 var router = express.Router();
 var PORT = 8081;
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
+
 router.get('/watches', function (req, res) {
   res.json({
     data: [
