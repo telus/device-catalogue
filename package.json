@@ -10,6 +10,7 @@
   "dependencies": {
     "@tds/core-css-reset": "^3.0.1",
     "@tds/core-heading": "^3.0.8",
+    "cors": "^2.8.5",
     "enzyme": "^3.11.0",
     "express": "^4.17.1",
     "react": "^16.14.0",
@@ -32,5 +33,6 @@
     "webpack": "^5.21.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "proxy": "http://localhost:8081"
 }
