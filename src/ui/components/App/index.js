@@ -5,21 +5,19 @@ import Watches from '../Watches';
 import Iphones from '../Iphones';
 import NotFound from '../NotFound';
 
+import HairlineDivider from '@tds/core-hairline-divider';
+import Nav from '../Nav';
+
+
 const App = () => (
   <Router>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/watches">Watches</Link></li>
-      <li><Link to="/iphones">iphones</Link></li>
-      <li><Link to="/asdadasdasd">404</Link></li>
-    </ul>
-    <hr />
+    <Nav />
+    <HairlineDivider />
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/watches" component={Watches} />
       <Route path="/iphones" component={Iphones} />
-      <Route path="*" children={NotFound} />
-     
+      <Route path="*" component={NotFound} />
     </Switch>
   </Router>
 );
