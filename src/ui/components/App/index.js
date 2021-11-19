@@ -1,10 +1,9 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import Home from '../Home';
 import Watches from '../Watches';
 import Iphones from '../Iphones';
 import NotFound from '../NotFound';
-
 import HairlineDivider from '@tds/core-hairline-divider';
 import Nav from '../Nav';
 
@@ -15,9 +14,9 @@ const App = () => (
     <HairlineDivider />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/watches" component={Watches} />
-      <Route path="/iphones" component={Iphones} />
-      <Route path="*" component={NotFound} />
+      <Route exact path="/watches" component={Watches} />
+      <Route exact path="/iphones" component={Iphones} />
+      <Route component={NotFound} />
     </Switch>
   </Router>
 );

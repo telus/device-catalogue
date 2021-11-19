@@ -5,8 +5,8 @@ import CSSReset from '@tds/core-css-reset';
 
 ReactDOM.render(
   <>
-<CSSReset />
-  <App />
+    <CSSReset />
+    <App />
   </>,
   document.getElementById('root')
 );
