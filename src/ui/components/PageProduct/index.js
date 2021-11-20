@@ -11,15 +11,11 @@ import Text from '@tds/core-text'
 import Strong from '@tds/core-strong'
 import HairlineDivider from '@tds/core-hairline-divider';
 import Box from '@tds/core-box'
-import Small from '@tds/core-small'
-
 
 export default function PageProduct(props) {
-    console.log("++++ PageProduct 1: ", props)
-
     const {product, index } = props;
+    console.log(`PageProduct component props: ${props}`)
 
-    console.log("++++ PageProduct 2: ", product)
     return (
         <FlexGrid.Col>
             <Box vertical={0}>

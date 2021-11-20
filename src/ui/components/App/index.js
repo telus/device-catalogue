@@ -6,19 +6,26 @@ import Iphones from '../Iphones';
 import NotFound from '../NotFound';
 import HairlineDivider from '@tds/core-hairline-divider';
 import Nav from '../Nav';
-
+import WatchesContextProvider from "../../context/WatchesContext";
+import IphonesContextProvider from "../../context/IphonesContext";
 
 const App = () => (
-  <Router>
-    <Nav />
-    <HairlineDivider />
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/watches" component={Watches} />
-      <Route exact path="/iphones" component={Iphones} />
-      <Route component={NotFound} />
-    </Switch>
-  </Router>
+  <WatchesContextProvider>
+    <Router>
+      <Nav />
+      <HairlineDivider />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        
+          <Route exact path="/watches" component={Watches} />
+        
+        <IphonesContextProvider>
+          <Route exact path="/iphones" component={Iphones} />
+        </IphonesContextProvider>
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
+    </WatchesContextProvider>
 );
 
 export default App;
