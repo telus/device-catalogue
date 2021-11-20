@@ -1,0 +1,36 @@
+@import "../../styles/theme.scss";
+
+.NavComponent {
+    background: $TELUSPurple;
+    > div {
+        > div {
+            padding: 0;
+            a {
+                color: $TELUSWhite;
+                padding:20px;
+                 > i {
+                    position: relative;
+                    top: 4px;
+                    right: 5px;
+                    > svg {
+                        fill: $TELUSWhite;
+                    }
+                 }
+            }
+            a.active {
+                background: $TELUSWhite;
+                color: $TELUSPurple;
+                > i {
+                    > svg {
+                        fill: $TELUSPurple;
+                    }
+                 }
+            }
+           
+        }
+    }
+   
+
+    
+}
+
