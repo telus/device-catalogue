@@ -4,6 +4,7 @@ import PageHeading from "../PageHeading";
 import PageProduct from "../PageProduct";
 import { IphonesContext } from "../../context/IphonesContext";
 
+
 export default function Iphones() {
     const [iphoneState] = useContext(IphonesContext);
     console.log(`Iphones Component retrieving data from context: ${iphoneState}`);
@@ -15,7 +16,7 @@ export default function Iphones() {
                 <FlexGrid.Row>
                     {iphoneState ?
                         iphoneState.map((item, index) => (
-                            <PageProduct key={`iphones-${index}`} product={item} index={index}/>
+                            <PageProduct key={`iphones-${index}`} product={item} index={index} type="iphones"/>
                         ))
                         : "No iPhones available at this moment. Come back soon!"
                     }
