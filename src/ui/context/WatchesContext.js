@@ -1,4 +1,5 @@
 import React, {useEffect, useState, createContext} from 'react';
+const axios = require('axios').default;
 
 export const WatchesContext = createContext();
 
@@ -6,8 +7,8 @@ export default function WatchesContextProvider(props) {
     const [watches, setWatches] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:8081/watches")
-        .then(res => res.json())
+        axios.get("http://localhost:8081/watches")
+        
         .then(data => {
             console.log(`Successfully imported data from watches api: ${data}`)
             setWatches(data.data)

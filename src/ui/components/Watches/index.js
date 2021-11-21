@@ -6,15 +6,15 @@ import { WatchesContext } from "../../context/WatchesContext";
 
 export default function Watches() {
     const [watchState] = useContext(WatchesContext);
-    console.log(`Watches Component retrieving data from context: ${watchState}`)
-
+    //console.log(`Watches Component retrieving data from context: ${JSON.stringify(watchState)}`)
+    const watches = watchState.data;
     return (
         <>
             <PageHeading title="Watches" />
             <FlexGrid>
                 <FlexGrid.Row>
-                    {watchState ?
-                        watchState.map((item, index) => (
+                    {watches ?
+                        watches.map((item, index) => (
                             <PageProduct key={`watches-${index}`} product={item} index={index}  type="watches"/>
                         ))
                         : "No Watches available at this moment. Come back soon!"

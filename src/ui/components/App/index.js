@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import Home from '../Home';
 import Watches from '../Watches';
 import Iphones from '../Iphones';
@@ -11,21 +11,25 @@ import IphonesContextProvider from "../../context/IphonesContext";
 
 const App = () => (
   <WatchesContextProvider>
-    <Router>
-      <Nav />
-      <HairlineDivider />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        
+    <IphonesContextProvider>
+      <Router>
+        <Nav />
+        <HairlineDivider />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          {/* <Route path="/watches">
+            <Watches/>
+          </Route>
+          <Route path="/iphones">
+            <Iphones/>
+          </Route> */}
           <Route exact path="/watches" component={Watches} />
-        
-        <IphonesContextProvider>
           <Route exact path="/iphones" component={Iphones} />
-        </IphonesContextProvider>
-        <Route component={NotFound} />
-      </Switch>
-    </Router>
-    </WatchesContextProvider>
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
+    </IphonesContextProvider>
+  </WatchesContextProvider>
 );
 
 export default App;
