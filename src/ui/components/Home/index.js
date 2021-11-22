@@ -1,6 +1,11 @@
 import React from 'react';
-import Heading from '@tds/core-heading';
+import PageHeading from "../PageHeading";
 
-const Home = () => <Heading level="h1">Device Catalogue</Heading>;
-
+const Home = () => {
+    return (
+        <>
+            <PageHeading title="Device Catalogue" />
+        </>
+    )
+}
 export default Home;
