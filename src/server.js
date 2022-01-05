@@ -1,7 +1,10 @@
-var express = require('express');
-var app = express();
-var router = express.Router();
-var PORT = 3000;
+const express = require('express');
+const app = express();
+const router = express.Router();
+const PORT = 8081;
+const cors = require('cors');
+
+app.use(cors());
 
 router.get('/watches', function(req, res) {
   res.json({
