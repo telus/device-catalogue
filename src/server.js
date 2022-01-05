@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var router = express.Router();
-var PORT = 8081;
+var PORT = 3000;
 
 router.get('/watches', function(req, res) {
   res.json({
