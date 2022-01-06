@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import CSSReset from '@tds/core-css-reset'
 import Heading from "@tds/core-heading";
 import FlexGrid from "@tds/core-flex-grid";
 import Box from "@tds/core-box";
@@ -14,6 +15,7 @@ import WatchesLayout from "../Watches";
 const Home = () => {
   return (
     <Router>
+      <CSSReset/>
       <Switch>
         <Route exact path="/">
           <React.Fragment>
@@ -83,7 +85,7 @@ const Home = () => {
             </div>
             <DimpleDivider />
             <div className="footer-text">
-              <Link href="https://www.telus.com/en/mobility" invert>
+              <Link to="https://www.telus.com/en/mobility" invert>
                 <Footnote />
               </Link>
             </div>
