@@ -1,9 +1,9 @@
 import useApplicationData from "../hooks/useApplicationData";
 import React from "react";
-import DisplayHeading from "@tds/core-display-heading";
 import DeviceCardGrid from "../DeviceCardGrid";
 import Link from "@tds/core-link";
 import Footnote from "../Footnote";
+import Heading from "@tds/core-heading";
 
 export default function IphonesLayout() {
   const { state } = useApplicationData();
@@ -13,7 +13,8 @@ export default function IphonesLayout() {
 
   return (
     <React.Fragment>
-      <DisplayHeading level="h1">List of iPhones</DisplayHeading>
+      <Heading level="h1" tag="h2">View our latest gadgets</Heading>
+      <br />
       <div className="iphone-grid">
         <DeviceCardGrid key={data.length} data={data} url={url} />
       </div>

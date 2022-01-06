@@ -1,25 +1,28 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import CSSReset from '@tds/core-css-reset'
+import CSSReset from "@tds/core-css-reset";
 import Heading from "@tds/core-heading";
 import FlexGrid from "@tds/core-flex-grid";
 import Box from "@tds/core-box";
 import Image from "@tds/core-image";
 import Paragraph from "@tds/core-paragraph";
 import DimpleDivider from "@tds/core-dimple-divider";
+import ChevronLink from "@tds/core-chevron-link";
 import Footnote from "../Footnote";
-import DisplayHeading from "@tds/core-display-heading";
 import IphonesLayout from "../IPhones";
 import WatchesLayout from "../Watches";
 
 const Home = () => {
   return (
     <Router>
-      <CSSReset/>
+      <CSSReset />
       <Switch>
         <Route exact path="/">
           <React.Fragment>
-            <DisplayHeading>Device Catalogue Showtime!</DisplayHeading>
+            <Heading level="h1" tag="h2">
+              Browse our exclusive device catalogues.
+            </Heading>
+            <br />
             <div className="home-iphone">
               <FlexGrid>
                 <FlexGrid.Row>
@@ -44,7 +47,9 @@ const Home = () => {
                         for a limited time only.
                       </Paragraph>
                       <div>
-                        <Link to="/iphones">Browse more iPhones</Link>
+                        <ChevronLink>
+                          <Link to="/iphones">Browse more iPhones</Link>
+                        </ChevronLink>
                       </div>
                     </Box>
                   </FlexGrid.Col>
@@ -76,7 +81,9 @@ const Home = () => {
                         Offer available for a limited time only.
                       </Paragraph>
                       <div>
-                        <Link to="/watches">Browse more Apple watches</Link>
+                        <ChevronLink>
+                          <Link to="/watches">Browse more Apple watches</Link>
+                        </ChevronLink>
                       </div>
                     </Box>
                   </FlexGrid.Col>

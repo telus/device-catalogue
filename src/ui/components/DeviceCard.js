@@ -13,18 +13,18 @@ import DimpleDivider from "@tds/core-dimple-divider";
 export default function DeviceCardItem(props) {
   return (
     <div className="device-card_item">
-      <FlexGrid>
+      <FlexGrid outsideGutter={false}>
         <FlexGrid.Row>
-          <FlexGrid.Col xs={12} md={5}>
-            <Card variant="defaultWithBorder">
-              <Box between={3}>
+          <FlexGrid.Col xs={12} md={9}>
+            <Card fullHeight variant="defaultWithBorder">
+              <Box between={4}>
                 <Image
                   src={props.url}
                   width={200}
                   height={100}
-                  alt="iPhone 13"
+                  alt="device"
                 />
-                <Heading level="h3">{props.brand}</Heading>
+                <Heading level="h3">{props.brand.toUpperCase()}</Heading>
                 <Heading level="h2" tag="h3">{props.name}</Heading>
                 <PriceLockup
                   size="medium"

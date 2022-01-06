@@ -4,15 +4,14 @@ import Box from "@tds/core-box";
 import DeviceCardItem from "./DeviceCard";
 
 export default function DeviceCardGrid(props) {
-  const grid = props.data.map((item) => {
-    return (
-      <section>
-        <FlexGrid>
-          <FlexGrid.Row >
-            <FlexGrid.Col>
-              <Box verical={2}>
+  return (
+    <FlexGrid>
+      <FlexGrid.Row>
+        {props.data.map((item, index) => {
+          return (
+            <FlexGrid.Col key={index}>
+              <Box verical={4}>
                 <DeviceCardItem
-                  key={props.data.indexOf(item)}
                   name={item.name}
                   brand={item.brand}
                   price={item.price}
@@ -20,10 +19,9 @@ export default function DeviceCardGrid(props) {
                 />
               </Box>
             </FlexGrid.Col>
-          </FlexGrid.Row>
-        </FlexGrid>
-      </section>
-    );
-  });
-  return grid;
+          );
+        })}
+      </FlexGrid.Row>
+    </FlexGrid>
+  );
 }
