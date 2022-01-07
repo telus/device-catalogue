@@ -11,7 +11,7 @@ export default function Footnote(props) {
     <div>
       <Card variant="defaultWithBorder">
         <Box between={3}>
-          <Heading level="h4">Disclaimer:</Heading>
+          <Heading level="h4">Get to know us more</Heading>
 
           <Paragraph>
             The TELUS team acknowledges that our work spans many Territories and

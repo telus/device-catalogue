@@ -18,14 +18,11 @@ export default function DeviceCardItem(props) {
           <FlexGrid.Col xs={12} md={9}>
             <Card fullHeight variant="defaultWithBorder">
               <Box between={4}>
-                <Image
-                  src={props.url}
-                  width={200}
-                  height={100}
-                  alt="device"
-                />
+                <Image src={props.url} width={200} height={100} alt="device" />
                 <Heading level="h3">{props.brand.toUpperCase()}</Heading>
-                <Heading level="h2" tag="h3">{props.name}</Heading>
+                <Heading level="h2" tag="h3">
+                  {props.name}
+                </Heading>
                 <PriceLockup
                   size="medium"
                   price={props.price}
@@ -34,8 +31,8 @@ export default function DeviceCardItem(props) {
                 />
                 <br />
                 <Text size="medium">Retail price: $470</Text>
-                <Button>Add to cart</Button>
-                <ChevronLink href="#">Learn more</ChevronLink>
+                {/* <Button>Add to cart</Button>
+                <ChevronLink href="#">Learn more</ChevronLink> */}
               </Box>
             </Card>
           </FlexGrid.Col>
