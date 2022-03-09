@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var cors = require('cors');
 var router = express.Router();
 var PORT = 8081;
 
@@ -46,6 +47,9 @@ router.get('/iphones', function(req, res) {
     ],
   });
 });
+
+// Enable Cross-origin resource sharing
+app.use(cors());
 
 app.use('/', router);
 
