@@ -8,6 +8,8 @@
     "unit": "jest"
   },
   "dependencies": {
+    "@tds/core-colours": "^2.2.4",
+    "@tds/core-css-reset": "^3.0.4",
     "@tds/core-heading": "^3.0.8",
     "enzyme": "^3.11.0",
     "express": "^4.17.1",
