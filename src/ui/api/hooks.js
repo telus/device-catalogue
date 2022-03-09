@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 export const useFetchData = (fetchFunction, ...fetchFunctionParams) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
+  const [hasError, setHasError] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -18,16 +18,16 @@ export const useFetchData = (fetchFunction, ...fetchFunctionParams) => {
       try {
         setIsLoading(true);
 
-        const data = await fetchFunction(...fetchFunctionParams);
-        setData(data);
+        const response = await fetchFunction(...fetchFunctionParams);
+        setData(response.data);
         setIsLoading(false);
       } catch (error) {
         setError(error);
-        setIsError(true);
+        setHasError(true);
       }
     };
     asyncFunction();
   }, []);
 
-  return [data, isLoading, isError, error];
+  return [data.data, isLoading, hasError, error];
 };
