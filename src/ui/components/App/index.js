@@ -5,10 +5,12 @@ import Home from "../Home";
 import NotFound from "../NotFound";
 import Watches from "../Watches";
 import IPhones from "../IPhones";
+import { GlobalFlexMain } from "@tds/core-css-reset";
 
 const App = () => (
   <>
     <CSSReset />
+    <GlobalFlexMain />
     <Router>
       <Switch>
         <Route exact path="/">
