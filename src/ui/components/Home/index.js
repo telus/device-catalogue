@@ -22,7 +22,7 @@ const Home = () => {
         <FlexGrid.Row>
           <FlexGrid.Col xs={12}>
             <Box between={3} vertical={4}>
-              <Image src={telusImage} width={150} height={50} />
+              <Image src={telusImage} width={150} height={50} alt="TELUS"/>
               <HairlineDivider />
               <Heading level="h1">Device Catalog</Heading>
               <Paragraph>Revolutionary devices at unbeatable prices.</Paragraph>
