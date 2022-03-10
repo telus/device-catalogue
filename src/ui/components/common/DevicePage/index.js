@@ -1,5 +1,6 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import Box from "@tds/core-box";
 import Heading from "@tds/core-heading";
 import HairlineDivider from "@tds/core-hairline-divider";
@@ -9,19 +10,26 @@ import Spinner from "@tds/core-spinner";
 import Notification from "@tds/core-notification";
 import FlexGrid from "@tds/core-flex-grid";
 import Image from "@tds/core-image";
-import Breadcrumbs from "@tds/core-breadcrumbs";
 import DimpleDivider from "@tds/core-dimple-divider";
+import ButtonLink from "@tds/core-button-link";
 
 import { useFetchData } from "../../../api/hooks";
 
 import DeviceGrid from "../../common/DeviceGrid";
 import telusImage from "../../../../../public/images/TELUS_TAGLINE_HORIZONTAL_EN.svg";
+import styled from "styled-components";
+
+const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 const DevicePage = ({
   title,
   subtitle,
   deviceType,
-  breadcrumbItems,
+  extraHeading,
+  breadcrumbs,
   fetchDataFunction,
 }) => {
   const [data, isLoading, hasError] = useFetchData(fetchDataFunction);
@@ -32,11 +40,16 @@ const DevicePage = ({
         <FlexGrid.Row>
           <FlexGrid.Col xs={12}>
             <Box vertical={4} between={3}>
-              <Image src={telusImage} width={150} height={50} alt="TELUS" />
+              <Link to="/">
+                <Image src={telusImage} width={150} height={50} alt="TELUS" />
+              </Link>
               <HairlineDivider />
-              <Breadcrumbs>{breadcrumbItems}</Breadcrumbs>
+              {breadcrumbs}
               <HairlineDivider />
-              <Heading level="h1">{title}</Heading>
+              <HeaderContainer>
+                <Heading level="h1">{title}</Heading>
+                {extraHeading}
+              </HeaderContainer>
               <Paragraph>{subtitle}</Paragraph>
               <DimpleDivider />
             </Box>
@@ -71,8 +84,9 @@ DevicePage.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   deviceType: PropTypes.string.isRequired,
-  breadcrumbItems: PropTypes.array,
+  breadcrumbs: PropTypes.object,
+  extraHeading: PropTypes.object,
   fetchDataFunction: PropTypes.func.isRequired,
-}
+};
 
 export default DevicePage;

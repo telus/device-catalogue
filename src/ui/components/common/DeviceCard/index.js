@@ -10,6 +10,10 @@ import Paragraph from "@tds/core-paragraph";
 import styled from "styled-components";
 import { colorTelusPurple } from "@tds/core-colours";
 
+const DeviceNameContainer = styled(Box)`
+  align-items: flex-start;
+`;
+
 const DeviceName = styled.span`
   font-weight: 400;
   color: ${colorTelusPurple};
@@ -30,10 +34,12 @@ const DeviceCard = ({ device, image, imageAlt = "Device image" }) => {
           <Box horizontal={5}>
             <Image src={image} alt={imageAlt} width={200} height={300} />
           </Box>
-          <Heading level="h3" tag="span">
-            {device.brand}
-          </Heading>
-          <DeviceName>{device.name}</DeviceName>
+          <DeviceNameContainer between={1}>
+            <Heading level="h3" tag="span">
+              {device.brand}
+            </Heading>
+            <DeviceName>{device.name}</DeviceName>
+          </DeviceNameContainer>
           <PriceLockup
             size="small"
             price={device.price.toString()}

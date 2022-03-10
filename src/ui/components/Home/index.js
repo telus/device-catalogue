@@ -14,6 +14,27 @@ import styled from "styled-components";
 
 const CenteredText = styled.span`
   text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+`;
+
+const HoverEffectContainer = styled(Box)`
+  img {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    margin-bottom: 20px;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+`;
+
+const DeviceLink = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Home = () => {
@@ -33,10 +54,10 @@ const Home = () => {
         </FlexGrid.Row>
         <FlexGrid.Row>
           <FlexGrid.Col xs={12}>
-            <Box between={3}>
-              <Box inline between={3} below={4}>
-                <Link to="/iphones">
-                  <Box between={3} horizontal={4}>
+            <Box between={4}>
+              <Box inline between={5} below={4}>
+                <HoverEffectContainer between={3} horizontal={4}>
+                  <DeviceLink to="/iphones">
                     <Image
                       src={phoneImage}
                       alt="iPhone image"
@@ -44,10 +65,10 @@ const Home = () => {
                       height={250}
                     />
                     <CenteredText>iPhones</CenteredText>
-                  </Box>
-                </Link>
-                <Link to="/watches">
-                  <Box between={3} inline={false}>
+                  </DeviceLink>
+                </HoverEffectContainer>
+                <HoverEffectContainer between={3} inline={false}>
+                  <DeviceLink to="/watches">
                     <Image
                       src={watchImage}
                       alt="Watch image"
@@ -55,8 +76,8 @@ const Home = () => {
                       height={250}
                     />
                     <CenteredText>Watches</CenteredText>
-                  </Box>
-                </Link>
+                  </DeviceLink>
+                </HoverEffectContainer>
               </Box>
               <HairlineDivider />
             </Box>
