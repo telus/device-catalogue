@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Box from "@tds/core-box";
 import Text from "@tds/core-text";
 import FlexGrid from "@tds/core-flex-grid";
@@ -21,9 +22,9 @@ const DeviceGrid = ({ devices, deviceType }) => {
   const deviceImage = deviceType === "iphone" ? phoneImage : watchImage;
 
   return (
-    <Box inset={4}>
+    <Box inset={0}>
       <FlexGrid>
-        <FlexGrid.Row>
+        <FlexGrid.Row horizontalAlign="center">
           {devices.map((device, index) => {
             return (
               <FlexGrid.Col key={`device-${index}`} xs={12} md={3}>
@@ -39,6 +40,11 @@ const DeviceGrid = ({ devices, deviceType }) => {
       </FlexGrid>
     </Box>
   );
+};
+
+DeviceGrid.propTypes = {
+  devices: PropTypes.arrayOf(PropTypes.object),
+  deviceType: PropTypes.string.isRequired,
 };
 
 export default DeviceGrid;

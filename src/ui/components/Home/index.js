@@ -6,6 +6,7 @@ import Paragraph from "@tds/core-paragraph";
 import Image from "@tds/core-image";
 import HairlineDivider from "@tds/core-hairline-divider";
 import FlexGrid from "@tds/core-flex-grid";
+import DimpleDivider from "@tds/core-dimple-divider";
 import phoneImage from "../../../../public/images/iphone.jpg";
 import watchImage from "../../../../public/images/watch.jpg";
 import telusImage from "../../../../public/images/TELUS_TAGLINE_HORIZONTAL_EN.svg";
@@ -22,10 +23,11 @@ const Home = () => {
         <FlexGrid.Row>
           <FlexGrid.Col xs={12}>
             <Box between={3} vertical={4}>
-              <Image src={telusImage} width={150} height={50} alt="TELUS"/>
+              <Image src={telusImage} width={150} height={50} alt="TELUS" />
               <HairlineDivider />
               <Heading level="h1">Device Catalog</Heading>
               <Paragraph>Revolutionary devices at unbeatable prices.</Paragraph>
+              <DimpleDivider />
             </Box>
           </FlexGrid.Col>
         </FlexGrid.Row>

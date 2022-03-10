@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Card from "@tds/core-card";
 import Box from "@tds/core-box";
 import Heading from "@tds/core-heading";
@@ -49,6 +50,12 @@ const DeviceCard = ({ device, image, imageAlt = "Device image" }) => {
       </Card>
     </Box>
   );
+};
+
+DeviceCard.propTypes = {
+  device: PropTypes.object,
+  image: PropTypes.any,
+  imageAlt: PropTypes.string,
 };
 
 export default DeviceCard;
